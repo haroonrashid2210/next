@@ -1,0 +1,57 @@
+@import '../../../styles/variables';
+
+@mixin navItem {
+    padding: 10px 20px;
+    display: inline-block;
+    list-style-type: none;
+    border-radius: 5px;
+    margin-right: 10px;
+
+    & {
+        a {
+            text-decoration: none;
+            color: $secondary;
+        }
+    }
+
+    &:hover {
+        background: $accent5;
+        cursor: pointer;
+
+        & {
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.nav {
+    background-color: $primary;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        margin: 0;
+        padding: 10px;
+
+        li {
+            @include navItem;
+        }
+    }
+}
+
+.logout {
+    margin: auto 0;
+    color: $secondary !important;
+
+    @include navItem;
+}
+
+.navActive {
+    background-color: $secondary  !important;
+
+    a {
+        color: $primary !important;
+    }
+}

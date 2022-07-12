@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+
+.container {
+    padding: 50px;
+}
+
+.actionTd {
+
+    a {
+        text-decoration: none;
+        margin-right: 10px !important;
+        border: 1px solid $primary;
+        background-color: $primary !important;
+        color: $secondary;
+        border-radius: 5px;
+        padding: 3px 10px;
+
+        &:hover {
+            border: 1px solid $accent3;
+            background-color: $secondary !important;
+            color: $primary !important;
+
+            transition-duration: 0.3s;
+        }
+    }
+}
