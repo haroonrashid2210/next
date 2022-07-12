@@ -1,0 +1,23 @@
+@import '../../../styles/index.scss';
+
+.button {
+    border: 1px solid $primary;
+    background-color: $primary;
+    color: $secondary;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+    &:hover {
+        border: 1px solid $accent3;
+        background-color: $secondary;
+        color: $primary;
+
+        transition-duration: 0.3s;
+    }
+}
+
+.sm_button {
+    @extend .button;
+    padding: 0px 10px;
+}
+
